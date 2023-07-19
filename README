@@ -1,0 +1,18 @@
+RTS-GMLC Test Case
+
+Reliability Test System - Grid Modernization Lab Consortium
+
+by Clayton Barrows, Ali Ehlen, Matt O Connell, Dheepak Krishnamurthy,
+   Brendan McBennett, and Aaron Bloom
+National Renewable Energy Lab, Golden CO
+
+Please see https://github.com/GridMod/RTS-GMLC for more details and/or
+updated versions.
+
+This version created via SAVECASE on Jan 10, 2019 from:
+  https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/FormattedData/MATPOWER/RTS_GMLC.m
+    >> mpc = loadcase('RTS_GMLC');
+    >> mpc = toggle_dcline(mpc, 'on');
+    >> savecase('case_RTS_GMLC', mpc);
+Manually added this help text and, in mpc.dcline data, manually deleted
+output columns MU_PMIN-MU_QMAXT and changed values of 9999 to Inf (RDZ).
